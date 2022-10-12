@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="container">
+            <div class="row center-div">
+                <div class="col-3">
+                    <div class="logo-navbar">
+                        <a href="index.html"><img src="img/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="group-menu-navbar">
+                        <div class="home">
+                            <a href="index.html">trang chủ</a>
+                        </div>
+                        <div class="about">
+                            <a href="about.html">giới thiệu</a>
+                        </div>
+                        <div class="product dropdown">
+                            <a href="product.html">dự án bất động sản <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Dự án SkyLand 90</a>
+                                <a href="#">Dự án biệt thự cao cấp</a>
+                                <a href="#">Mẫu căn hộ cao cấp</a>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <a href="news.html">tin tức</a>
+                        </div>
+                        <div class="contact">
+                            <a href="contact.html">liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="search-contact">
+
+                        <i class="fa fa-search dropdown-btn-search color-hover">
+                            <div class="dropdown-content-btn-search">
+                                <form>
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fa fa-search btn-search-inside"></i>
+                                </form>
+                            </div>
+                        </i>
+                        <span>Liên hệ ngay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="img-background">
+        <div class="img-background">
+            <img class="img-fluid" src="img/slider_1.webp" alt="">
+        </div>
+    </section>
+    <section id="search">
+        <div class="search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="group-option-item">
+                        <div class="item-option">
+                            <div class="name-item-option">
+                                <p>Chọn tỉnh/thành phố:</p>
+                            </div>
+                            <div class="custom-select" style="width: 200px;">
+                                <select>
+                                    <option value="0">- Tỉnh/Thành phố</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">TP. Hồ Chí Minh</option>
+                                    <option value="3">TP. Đà Nẵng</option>
+                                    <option value="4">TP. Hà Tĩnh</option>
+                                    <option value="5">TP. Hải Phòng</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-option">
+                            <div class="name-item-option">
+                                <p>Chọn quận/huyện:</p>
+                            </div>
+                            <div class="custom-select" style="width: 200px;">
+                                <select>
+                                    <option value="0">- Quận/Huyện</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-option">
+                            <div class="name-item-option">
+                                <p>Chọn loại bất động sản:</p>
+                            </div>
+                            <div class="custom-select" style="width: 200px;">
+                                <select>
+                                    <option value="0">- Loại Bất Động Sản</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-option button-search">
+                            <span><i class="fa fa-search"></i> tìm kiếm nhanh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="index">
+        <div class="container">
+            <div class="row">
+                <div class="top-title-index">
+                    <div class="img-top-title-index">
+                        <img class="img-fluid" src="img/before_title.webp" alt="">
+                    </div>
+                    <h2>Dự án BĐS nổi bật</h2>
+                    <p>Tổng hợp các dự án bất động sản tại Hà Nội, Đà Nẵng, TP Hồ Chí Minh...và cách tỉnh thành khác hot
+                        nhất thời điểm hiện tại</p>
+                </div>
+                <div class="group-item-index multiple-items">
+                    <div class="item-index">
+                        <div class="img-item-index">
+                            <img class="img-fluid" src="img/97493029.webp" alt="">
+                            <div class="img-plus-item-index">
+                                <div class="item-new">
+                                    <span>Mới đăng</span>
+                                </div>
+                                <div class="item-hot">
+                                    <span>Hot</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-item-index">
+                            <p>Căn hộ chung cư tại Sky Park Residence</p>
+                        </div>
+                        <div class="index">
+                            <div class="decr-item-index">
+                                <p> Dự án Sky Park Residence số 3 Tôn Thất Thuyết đang trong quá trình hoàn thiện để đáp
+                                    ứng
+                                    tiến độ bàn giao nhà trong ...</p>
+                            </div>
+                            <div class="detail-item-index">
+                                <p><i class="fa fa-map-marker"></i> Số 03 Tôn Thất thuyết</p>
+                                <p><i class="fa fa-building"></i> Loại BĐS: Chung cư</p>
+                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 146m2</p>
+                            </div>
+                        </div>
+                        <div class="price-item-index">
+                            <div class="cost">
+                                <p>2,5 Tỷ</p>
+                            </div>
+                            <div class="more-info">
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-index">
+                        <div class="img-item-index">
+                            <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                            <div class="img-plus-item-index">
+                                <div class="item-new">
+                                    <span>Mới đăng</span>
+                                </div>
+                                <div class="item-vip">
+                                    <span>vip</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-item-index">
+                            <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                        </div>
+                        <div class="index">
+                            <div class="decr-item-index">
+                                <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                    9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                            </div>
+                            <div class="detail-item-index">
+                                <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                            </div>
+                        </div>
+                        <div class="price-item-index">
+                            <div class="cost">
+                                <p>9,5 Tỷ</p>
+                            </div>
+                            <div class="more-info">
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-index">
+                        <div class="img-item-index">
+                            <img class="img-fluid" src="img/1.webp" alt="">
+                            <div class="img-plus-item-index">
+                                <div class="item-new">
+                                    <span>Mới đăng</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-item-index">
+                            <p>Căn hộ cao cấp nhìn ra sông quận 7</p>
+                        </div>
+                        <div class="index">
+                            <div class="decr-item-index">
+                                <p> Điểm nổi bật của Q7 Saigon Riverside:
+                                    1/ Dự án là khu phức hợp căn hộ tốt nhất Việt Nam, biệt thự liền kề, khu dâ...</p>
+                            </div>
+                            <div class="detail-item-index">
+                                <p><i class="fa fa-map-marker"></i> Đường Đào Trí P.Phú Thuận Q.7</p>
+                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                <p><i class="fa fa-globe"></i> Diện tích: ~ 80m2</p>
+                            </div>
+                        </div>
+                        <div class="price-item-index">
+                            <div class="cost">
+                                <p>1,7 Tỷ</p>
+                            </div>
+                            <div class="more-info">
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-index">
+                        <div class="img-item-index">
+                            <img class="img-fluid" src="img/8.webp" alt="">
+                            <div class="img-plus-item-index">
+                                <div class="item-new">
+                                    <span>Mới đăng</span>
+                                </div>
+                                <div class="item-hot">
+                                    <span>hot</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-item-index">
+                            <p>Sở hữu căn hộ cao cấp liền kề Phú Mỹ Hưng</p>
+                        </div>
+                        <div class="index">
+                            <div class="decr-item-index">
+                                <p> Sở hữu căn hộ cao cấp liền kề KĐT Phú Mỹ Hưng chỉ với 2.3 tỷ/căn 2PN, nằm mặt tiền
+                                    Nguyễn Văn Linh, Quận 7, với mảng...</p>
+                            </div>
+                            <div class="detail-item-index">
+                                <p><i class="fa fa-map-marker"></i> Khu đô thị mới Phú Mỹ Hưng</p>
+                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 160m2</p>
+                            </div>
+                        </div>
+                        <div class="price-item-index">
+                            <div class="cost">
+                                <p>1,5 Tỷ</p>
+                            </div>
+                            <div class="more-info">
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-me">
+        <div class="background-whyme">
+            <div class="container">
+                <div class="row">
+                    <div class="top-title-index">
+                        <div class="img-top-title-index">
+                            <img class="img-fluid" src="img/before_title.webp" alt="">
+                        </div>
+                        <h2>Vì sao bạn chọn bất động sản SkyLand ?</h2>
+                        <p>Chúng tôi cung cấp đầy đủ và chính xác nhất thông tin các dự án bất động sản trên toàn quốc
+                            song hành với dịch vụ tư vấn nhanh chóng và hiệu quả</p>
+                    </div>
+                    <div class="col">
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why1.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Chất lượng tốt nhất</p>
+                                <a>Nghiên cứu, thiết kế và đầu tư xây dựng với hệ thống dịch vụ với chất lượng tốt
+                                    nhất</a>
+                            </div>
+                        </div>
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why2.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Tìm kiếm thông tin dễ dàng</p>
+                                <a>Tìm kiếm bất động sản bạn muốn theo danh mục cực kì dễ dàng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why3.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Kết nối với nhà đầu tư</p>
+                                <a>Nhà đầu tư sẽ mang đến những sản phẩm và dịch vụ tốt nhất đáp ứng nhu cầu của bạn</a>
+                            </div>
+                        </div>
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why4.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Tối ưu hóa dịch vụ</p>
+                                <a>Nghiên cứu, phân tích, đánh giá nhu cầu của khách hàng một cách sâu sắc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why5.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Đảm bảo quyền lợi khách hàng</p>
+                                <a>Thực hiện các chương trình chăm sóc và gia tăng lợi ích cho khách hàng</a>
+                            </div>
+                        </div>
+                        <div class="item-why">
+                            <div class="img-item-why">
+                                <img class="img-fluid" src="img/img_why6.webp" alt="">
+                            </div>
+                            <div class="index-item-why">
+                                <p>Tiết kiệm thời gian & chi phí</p>
+                                <a>Cập nhật giá cả nhanh chóng và chính xác giúp bạn tiết kiệm chi phí hơn nhiều</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="product">
+        <div class="container">
+            <div class="row">
+                <div class="product-new">
+                    <div class="title-product-new">
+                        <h2>Bất động sản mới nhất</h2>
+                    </div>
+                    <div class="index-product-new group-item-index">
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/123462710-4f88136c-d0b1-4e55-9cf4-7aaa7d5b3a91.webp"
+                                    alt="">
+                            </div>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/139454055-affa33ca-9ab7-405a-8418-66f15575db65.webp"
+                                    alt="">
+                            </div>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/145779320.webp" alt="">
+                            </div>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/97493029 (1).webp" alt="">
+                            </div>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 30px 0;">
+                <div class="product-new">
+                    <div class="title-product-new">
+                        <h2>Bất động sản xem nhiều</h2>
+                    </div>
+                    <div class="index-product-new group-item-index">
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/97493029.webp" alt="">
+                            </div>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/145779320.webp" alt="">
+                            </div>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                            </div>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/8.webp" alt="">
+                            </div>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="getmail" class="getmail">
+        <div class="img-background-getmail">
+            <div class="container">
+                <div class="row">
+                    <div class="top-title-index">
+                        <div class="img-top-title-index">
+                            <img class="img-fluid" src="img/before_title.webp" alt="">
+                        </div>
+                        <h2>Nhận thông tin nhà đất miễn phí</h2>
+                        <p>Cập nhật hơn 1.000.000 thông tin mua bán và giao dịch nhà đất mỗi tháng tại 63 tỉnh thành phố
+                            trên cả nước</p>
+                    </div>
+                    <div class="group-btn-getmail">
+                        <div class="input-getmail">
+                            <input type="text" placeholder="Nhập email của bạn...">
+                        </div>
+                        <div class="btn-getmail">
+                            <button>nhận tin miễn phí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="news">
+        <div class="container">
+            <div class="row" style="margin: 30px 0;">
+                <div class="product-new">
+                    <div class="title-product-new">
+                        <h2>Tin tức thị trường</h2>
+                    </div>
+                </div>
+                <div class="col-8 news-item-news">
+                    <div class="row group-item-news">
+                        <div class="col left-board">
+                            <div class="group-of-group-item-news">
+                                <div class="item-news-title">
+                                    <div class="img-item-new-title">
+                                        <img src="img/vinpearl-ha-long-bay-resort-0.webp" alt="">
+                                        <div class="info-item-new-title">
+                                            <p>Xuất hiện căn hộ cao cấp làm mê mẩn giới thượng lưu</p>
+                                            <span><i class="fa fa-calendar"></i> Fri,17/08/2018</span>
+                                            <span><i class="fa fa-comments" aria-hidden="true"></i>(2) Bình luận</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/a7.webp" alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Chính sách ưu đãi có một không hai khi đầu tư BĐS nghỉ dưỡng tại Khánh Hòa
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/vinhomes-giang-vo.webp" alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Buổi gặp gỡ cộng đồng cư dân danh giá tương lai của dự án Dragon Fairy
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/khach-san-intercontinental-nha-trang.webp" alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Điều gì khiến bất động sản nghỉ dưỡng Nha Trang thành rốn đầu tư
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col right-board">
+                            <div class="group-of-group-item-news">
+                                <div class="item-news-title">
+                                    <div class="img-item-new-title">
+                                        <img src="img/9401.webp" alt="">
+                                        <div class="info-item-new-title">
+                                            <p>Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai
+                                            </p>
+                                            <span><i class="fa fa-calendar"></i> Fri,17/08/2018</span>
+                                            <span><i class="fa fa-comments" aria-hidden="true"></i>(2) Bình luận</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/36-1-kmey.webp" alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Hà Nội phê duyệt chỉ giới đường đỏ tuyến đường khu đô thị Gia Lâm tới ga Phú
+                                            Thị
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/tieu-chuan-dung-ve-chieu-cao-cua-can-ho-chung-cu-la-bao-nhieu.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Ưu thế của những căn hộ có diện tích lớn khi được đưa vào sử dụng
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                                <div class="item-news-item">
+                                    <div class="img-mini-left">
+                                        <img src="img/155afa53d7546777306ef2c898610b03.webp" alt="">
+                                    </div>
+                                    <div class="content-right">
+                                        <p>Gateway - điểm nhấn đầu tư tại Vũng Tàu đang thu hút nhà đầu tư
+                                        </p>
+                                        <span><i class="fa fa-calendar"></i> Fri, 17/08/2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 banner-new">
+                    <div class="img-banner-new">
+                        <img class="img-fluid" src="img/banner_blog_section.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="brands" style="border-top:1px solid #dddddd">
+        <div class="container">
+            <div class="row">
+                <div class="group-brands">
+                    <div class="item-brands">
+                        <img src="img/brand1.webp" alt="">
+                    </div>
+                    <div class="item-brands">
+                        <img src="img/brand2.webp" alt="">
+                    </div>
+                    <div class="item-brands">
+                        <img src="img/brand3.webp" alt="">
+                    </div>
+                    <div class="item-brands">
+                        <img src="img/brand4.webp" alt="">
+                    </div>
+                    <div class="item-brands">
+                        <img src="img/brand5.webp" alt="">
+                    </div>
+                    <div class="item-brands">
+                        <img src="img/brand6.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="top-title-index">
+                    <div class="img-top-title-index" style="padding: 20px 0;">
+                        <img class="img-fluid" src="img/before_title.webp" alt="">
+                    </div>
+                    <div class="img-top-title-index" style="padding-top:0;">
+                        <img class="img-fluid" src="img/logo_footer.webp" alt="">
+                    </div>
+                    <p style="color: white; opacity:0.5;margin-bottom: 0;">Với hơn 10 năm kinh nghiệm, SkyLand tự hào là
+                        sàn mua bán,
+                        giao dịch và quảng cáo bất động sản
+                        hàng đầu tại Việt Nam</p>
+                </div>
+                <div class="index-footer">
+                    <div class="group-item-top-footer">
+                        <div class="item-top-footer">
+                            <div class="img-item-top-footer">
+                                <img src="img/place_maps.webp" alt="">
+                            </div>
+                            <div class="detail-item-top-footer">
+                                <p>Trụ sở chính</p>
+                                <p><b>Tầng 8 Ladeco, 266 Đội Cấn, Hà Nội, Vietnam</b></p>
+                            </div>
+                        </div>
+                        <div class="item-top-footer">
+                            <div class="img-item-top-footer">
+                                <img src="img/place_phone.webp" alt="">
+                            </div>
+                            <div class="detail-item-top-footer">
+                                <p>Hotline</p>
+                                <p><b>1900 6750</b></p>
+                            </div>
+                        </div>
+                        <div class="item-top-footer">
+                            <div class="img-item-top-footer">
+                                <img src="img/place_email.webp" alt="">
+                            </div>
+                            <div class="detail-item-top-footer">
+                                <p>Email</p>
+                                <p><b>support@sapo.vn</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-item-bottom-footer">
+                        <div class="item-bottom-footer">
+                            <div class="title-item-bottom-footer">
+                                <p>thông tin công ty</p>
+                            </div>
+                            <div class="detail-item-bottom-footer">
+                                <a href="">Trang chủ</a>
+                                <a href="">Giới thiệu</a>
+                                <a href="">Dự án bất động sản</a>
+                                <a href="">Tin tức</a>
+                                <a href="">Liên hệ</a>
+                            </div>
+                        </div>
+                        <div class="item-bottom-footer">
+                            <div class="title-item-bottom-footer">
+                                <p>HỖ TRỢ KHÁCH HÀNG</p>
+                            </div>
+                            <div class="detail-item-bottom-footer">
+                                <a href="">Trang chủ</a>
+                                <a href="">Giới thiệu</a>
+                                <a href="">Dự án bất động sản</a>
+                                <a href="">Tin tức</a>
+                                <a href="">Liên hệ</a>
+                            </div>
+                        </div>
+                        <div class="item-bottom-footer">
+                            <div class="title-item-bottom-footer">
+                                <p>CHÍNH SÁCH HOẠT ĐỘNG</p>
+                            </div>
+                            <div class="detail-item-bottom-footer">
+                                <a href="">Trang chủ</a>
+                                <a href="">Giới thiệu</a>
+                                <a href="">Dự án bất động sản</a>
+                                <a href="">Tin tức</a>
+                                <a href="">Liên hệ</a>
+                            </div>
+                        </div>
+                        <div class="item-bottom-footer">
+                            <div class="title-item-bottom-footer">
+                                <p>KẾT NỐI VỚI CHÚNG TÔI</p>
+                            </div>
+                            <div class="detail-item-bottom-footer">
+                                <a href="">Trang chủ</a>
+                                <a href="">Giới thiệu</a>
+                                <a href="">Dự án bất động sản</a>
+                                <a href="">Tin tức</a>
+                                <a href="">Liên hệ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="copyright" class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="text-copyright">
+                    <span>@ Bản quyền thuộc về Cafein Team | Cung cấp bởi <a href=""
+                            style="color: #2dfd80;text-decoration: none;">Sapo</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        document.addEventListener("click", closeAllSelect);
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.multiple-items').slick({
+            infinite: false,
+            dots: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+        });
+    </script>
+</body>
+
+</html>
