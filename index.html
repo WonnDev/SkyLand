@@ -58,7 +58,7 @@
                             <div class="dropdown-content-btn-search">
                                 <form>
                                     <input type="text" placeholder="Search...">
-                                    <i class="fa fa-search btn-search-inside"></i>
+                                    <i class="fa fa-search btn-search-inside color-hover"></i>
                                 </form>
                             </div>
                         </i>
@@ -123,7 +123,7 @@
     </section>
     <section id="index">
         <div class="container">
-            <div class="row">
+            <div class="row" style="justify-content: center;">
                 <div class="top-title-index">
                     <div class="img-top-title-index">
                         <img class="img-fluid" src="img/before_title.webp" alt="">
@@ -132,7 +132,7 @@
                     <p>Tổng hợp các dự án bất động sản tại Hà Nội, Đà Nẵng, TP Hồ Chí Minh...và cách tỉnh thành khác hot
                         nhất thời điểm hiện tại</p>
                 </div>
-                <div class="group-item-index multiple-items">
+                <div class="group-item-index multiple-items" style="max-width: 1170px;">
                     <div class="item-index">
                         <div class="img-item-index">
                             <img class="img-fluid" src="img/97493029.webp" alt="">
@@ -287,7 +287,7 @@
                         <div class="img-top-title-index">
                             <img class="img-fluid" src="img/before_title.webp" alt="">
                         </div>
-                        <h2>Vì sao bạn chọn bất động sản SkyLand ?</h2>
+                        <h2>Vì sao bạn nên chọn bất động sản SkyLand ?</h2>
                         <p>Chúng tôi cung cấp đầy đủ và chính xác nhất thông tin các dự án bất động sản trên toàn quốc
                             song hành với dịch vụ tư vấn nhanh chóng và hiệu quả</p>
                     </div>
@@ -740,7 +740,19 @@
         </div>
     </section>
 
+    <section style="margin: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div id="root"></div>
+                <div id="output"></div>
 
+                <script type="text/babel">
+                    const getMessage = () => "Hello World";
+                    document.getElementById('output').innerHTML = getMessage();
+                </script>
+            </div>
+        </div>
+    </section>
 
 
     <section id="brands" style="border-top:1px solid #dddddd">
@@ -773,7 +785,7 @@
         <div class="container">
             <div class="row">
                 <div class="top-title-index">
-                    <div class="img-top-title-index" style="padding: 20px 0;">
+                    <div class="img-top-title-index">
                         <img class="img-fluid" src="img/before_title.webp" alt="">
                     </div>
                     <div class="img-top-title-index" style="padding-top:0;">
@@ -878,6 +890,42 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <script type="text/babel" data-presets="react,stage-3">
+        // const Example = () => {
+        //     return <div>Hello, React!</div>;
+        // };
+        function delay(ms, ...args) {
+            return new Promise(resolve => setTimeout(resolve, ms, ...args));
+        }
+
+        // Example component that has a `useEffect`
+        const { useState, useEffect } = React;
+
+        const Example = () => {
+            const [message, setMessage] = useState("Hello, React!");
+
+            useEffect(() => {
+                // A contrived async function for demo purposes only
+                (async () => {
+                    await delay(1000);
+                    setMessage("Hello again React!");
+                })();
+            }, []);
+
+            return <div>{message}</div>;
+        };
+
+        ReactDOM.render(<Example />, document.getElementById("root"));
+    </script>
+    </script>
+    <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+
 
 
 
