@@ -30,17 +30,17 @@
                 <div class="col-6">
                     <div class="group-menu-navbar">
                         <div class="home">
-                            <a href="index.html">trang chủ</a>
+                            <a class="color-active" href="index.html">trang chủ</a>
                         </div>
                         <div class="about">
                             <a href="about.html">giới thiệu</a>
                         </div>
-                        <div class="product dropdown">
-                            <a href="product.html">dự án bất động sản <i class="fa fa-caret-down"></i></a>
+                        <div class="product dropdown" data-bs-toggle="dropdown">
+                            <a>dự án bất động sản <i class="fa fa-caret-down"></i></a>
                             <div class="dropdown-content">
-                                <a href="#">Dự án SkyLand 90</a>
-                                <a href="#">Dự án biệt thự cao cấp</a>
-                                <a href="#">Mẫu căn hộ cao cấp</a>
+                                <a href="product.html">Dự án SkyLand 90</a>
+                                <a href="product.html">Dự án biệt thự cao cấp</a>
+                                <a href="product.html">Mẫu căn hộ cao cấp</a>
                             </div>
                         </div>
                         <div class="news">
@@ -269,6 +269,42 @@
                         <div class="price-item-index">
                             <div class="cost">
                                 <p>1,5 Tỷ</p>
+                            </div>
+                            <div class="more-info">
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-index">
+                        <div class="img-item-index">
+                            <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                            <div class="img-plus-item-index">
+                                <div class="item-new">
+                                    <span>Mới đăng</span>
+                                </div>
+                                <div class="item-vip">
+                                    <span>vip</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-item-index">
+                            <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                        </div>
+                        <div class="index">
+                            <div class="decr-item-index">
+                                <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                    9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                            </div>
+                            <div class="detail-item-index">
+                                <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                            </div>
+                        </div>
+                        <div class="price-item-index">
+                            <div class="cost">
+                                <p>9,5 Tỷ</p>
                             </div>
                             <div class="more-info">
                                 <span>Xem chi tiết</span>
@@ -739,22 +775,6 @@
 
         </div>
     </section>
-
-    <section style="margin: 50px 0;">
-        <div class="container">
-            <div class="row">
-                <div id="root"></div>
-                <div id="output"></div>
-
-                <script type="text/babel">
-                    const getMessage = () => "Hello World";
-                    document.getElementById('output').innerHTML = getMessage();
-                </script>
-            </div>
-        </div>
-    </section>
-
-
     <section id="brands" style="border-top:1px solid #dddddd">
         <div class="container">
             <div class="row">
@@ -890,45 +910,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-    <script type="text/babel" data-presets="react,stage-3">
-        // const Example = () => {
-        //     return <div>Hello, React!</div>;
-        // };
-        function delay(ms, ...args) {
-            return new Promise(resolve => setTimeout(resolve, ms, ...args));
-        }
-
-        // Example component that has a `useEffect`
-        const { useState, useEffect } = React;
-
-        const Example = () => {
-            const [message, setMessage] = useState("Hello, React!");
-
-            useEffect(() => {
-                // A contrived async function for demo purposes only
-                (async () => {
-                    await delay(1000);
-                    setMessage("Hello again React!");
-                })();
-            }, []);
-
-            return <div>{message}</div>;
-        };
-
-        ReactDOM.render(<Example />, document.getElementById("root"));
-    </script>
-    </script>
-    <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="

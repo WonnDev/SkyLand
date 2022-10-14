@@ -20,11 +20,11 @@ body {
     padding: 0 30px;
 }
 .button-search {
-    margin-top: 45px;
+    margin-top: 38px;
 }
 .button-search span {
     background: #25975a;
-    padding: 10px 28px;
+    padding: 8px 28px;
     border-radius: 3px;
     color: white;
     font-weight: bold;
@@ -63,17 +63,15 @@ body {
     max-width: 350px;
     margin: 0 20px;
 }
-.title-item-index p {
-    padding: 5px 0;
-    font-weight: bold;
-}
 .title-item-index p:hover {
     color: #35bf76;
+    cursor: pointer;
 }
 .title-item-index p {
-    margin-bottom: 0.5rem;
-    padding: 5px 10px;
-    font-size: 16px;
+    margin: 0.5rem 0;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
 }  
 .index p {
     font-size: 14px;
@@ -181,11 +179,11 @@ body {
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 14px;
+    top: 16px;
     right: 10px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
+    border: 5px solid transparent;
     border-color: rgb(0, 0, 0) transparent transparent transparent;
 }
 .select-selected.select-arrow-active:after {
@@ -193,7 +191,7 @@ body {
     top: 7px;
 }
     .select-items div,.select-selected {
-    padding: 8px 16px;
+    padding: 6px 16px;
     border: 1px solid #ddd;
     background-color: #fff;
     cursor: pointer;
@@ -358,10 +356,10 @@ body {
     font-size: 13px;
     color: #b2b2c4;
 }
+.color-active,
 .content-right .fa {
-    color: #35bf76;
+    color: #35bf76 !important;
 }
-
 /****** navbar ******/
 .group-menu-navbar {
     display: flex;
@@ -498,7 +496,7 @@ body {
 
 
 /************************* news *********************************/
-.background-top-news {
+.background-top {
     background: url(img/bg_breadcrumb.webp) no-repeat center center;
     display: flex;
     flex-direction: column;
@@ -509,15 +507,15 @@ body {
     min-height: 300px;
     margin-bottom: 40px;
 }
-.title-background-top-news {
+.title-background-top {
     color: #fff;
     
 }
-.title-background-top-news h2 {
+.title-background-top h2 {
     font-size: 40px;
     font-weight: bold;
 }
-.title-background-top-news a {
+.title-background-top a {
     text-decoration: none;
     color: #FFF;
     padding: 0 5px;
@@ -602,6 +600,65 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
+/************** product *****************/
+#product .background-top {
+    margin-bottom: 0;
+}
+.multiple-items-product {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.multiple-items-product .item-index {
+    margin: 10px;
+}
+
+/******************** contact ************************/
+.group-text-contact p {
+    margin-bottom: 0.5rem;
+}
+.group-text-contact .fa {
+    color: #35bf76;
+}
+.left-contact,.right-contact {
+    margin: 0 25px;
+}
+.left-contact h5,
+.right-contact h5 {
+    font-weight: bold;
+}
+.group-input-name-mail {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.group-input-name-mail input {
+    width: 48%;
+    padding: 5px 15px;
+    outline: 0;
+    font-size: 14px;
+}
+.input-number,
+.text-area {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+}
+.input-number input,
+.text-area textarea {
+    width: 100%;
+    padding: 5px 15px;
+    outline: 0;
+    font-size: 14px;
+}
+.button-submit {
+    font-size: 15px;
+    color: white;
+    padding: 8px 30px;
+    background: #35bf76;
+    border-radius: 3px;
+    outline: 0;
+    border: unset;
+}
 
 
 /**************** reponsive ******************/
@@ -614,37 +671,54 @@ ul li {
         justify-content: center;
     }
     .center-div .col-6,
-    .news-item-news{
+    .news-item-news,
+    .small-news img{
         width: 100%;
     }
-    .group-menu-navbar a {
-        margin: 0 10px;
+    .dropdown-content {
+        top: 88px;
+    }
+    .group-menu-navbar a,
+    .top-title-index,
+    .title-content-right p,
+    .text-of-content-right,
+    .content-right p {
+        margin: 0;
+    }
+    .background-whyme .row,
+    .group-item-top-footer,
+    .big-news-content-right,
+    .content-right p {
+        padding: 0;
     }
     .group-option-item,
     .group-item-index,
-    .group-btn-getmail {
+    .group-btn-getmail,
+    .item-news-item {
         flex-direction: column;
     }
     .search-bar,
-    .background-whyme p,
-    .index-item-why,
     .content-right p,
     .top-title-index p,
     .title-item-bottom-footer p,
     .detail-item-bottom-footer a,
     .detail-item-top-footer p,
-    .text-copyright span {
+    .text-copyright span,
+    .menu-news p,
+    .title-news p,
+    .group-menu-navbar a,
+    .index-content-right a,
+    .text-of-content-right,
+    .index-content-right button {
         font-size: 12px;
+    }
+    .index-item-why,
+    .background-whyme p {
+        font-size: 10px;
+        padding: 0;
     }
     .button-search {
         margin-top: 35px;
-    }
-    .background-whyme .row,
-    .group-item-top-footer {
-        padding: 0;
-    }
-    .top-title-index {
-        margin: 0;
     }
     .index-item-why a,
     .content-right span {
@@ -677,7 +751,26 @@ ul li {
     .item-brands {
         margin: 5px;
     }
+    .content-right span,
+    .info-item-new-title {
+        position: unset;
+    }
+    .item-top-footer img {
+        width: 40px;
+    }
+    .item-brands img {
+        max-width: 120px;
+    }
+    .img-item-why img {
+        width: 100px;
+        padding-right: 5px;
+    }
+    .index-contact {
+        flex-direction: column;
+    }
+    .left-contact, .right-contact {
+        margin: 0;
+    }
     
     
-
 }
