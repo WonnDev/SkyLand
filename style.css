@@ -365,6 +365,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 2px 0;
 }
 .group-menu-navbar a {
     text-decoration: none;
@@ -449,9 +450,12 @@ body {
 .dropdown-btn-search {
     padding: 23px;
 }
-.dropdown:hover .dropdown-content,
+/* .dropdown:hover .dropdown-content, */
 .dropdown-btn-search:hover .dropdown-content-btn-search
 {display: block;}
+.show {
+    inset: 22px auto auto 0px !important;
+} 
 
 /*** getmail ***/
 .getmail {
@@ -658,6 +662,9 @@ ul li {
     border-radius: 3px;
     outline: 0;
     border: unset;
+}
+.right-contact .row {
+    padding-left: 12px;
 }
 
 
