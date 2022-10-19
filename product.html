@@ -15,6 +15,16 @@
 </head>
 
 <body>
+    <section id="navbar-mobile" class="navbar-mobile">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img src="img/logo.webp" alt=""></a>
+            <a href="about.html">Giới thiệu</a>
+            <a class="color-active" href="product.html">Dự án bất động sản</a>
+            <a href="news.html">Tin tức</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </section>
     <section id="navbar">
         <div class="container">
             <div class="row center-div">
@@ -55,11 +65,11 @@
                             <div class="dropdown-content-btn-search">
                                 <form>
                                     <input type="text" placeholder="Search...">
-                                    <i class="fa fa-search btn-search-inside color-hover"></i>
+                                    <i class="fa fa-search btn-search-inside color-hover" onclick="onClickSearch()"></i>
                                 </form>
                             </div>
                         </i>
-                        <span>Liên hệ ngay</span>
+                        <span><a href="contact.html">Liên hệ ngay</a></span>
                     </div>
                 </div>
             </div>
@@ -86,324 +96,336 @@
                     <p>Tổng hợp các dự án bất động sản tại Hà Nội, Đà Nẵng, TP Hồ Chí Minh...và cách tỉnh thành khác hot
                         nhất thời điểm hiện tại</p>
                 </div>
-                <div class="group-item-index multiple-items-product">
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/97493029.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
-                                </div>
-                                <div class="item-hot">
-                                    <span>Hot</span>
+                <div class="row group-item-index multiple-items-product">
+                    <div class="col">
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/97493029.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-hot">
+                                        <span>Hot</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="title-item-index">
-                            <p>Căn hộ chung cư tại Sky Park Residence</p>
+                            <div class="title-item-index">
+                                <p>Căn hộ chung cư tại Sky Park Residence</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Dự án Sky Park Residence số 3 Tôn Thất Thuyết đang trong quá trình hoàn thiện để
+                                        đáp
+                                        ứng
+                                        tiến độ bàn giao nhà trong ...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Số 03 Tôn Thất thuyết</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Chung cư</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 146m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>2,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Dự án Sky Park Residence số 3 Tôn Thất Thuyết đang trong quá trình hoàn thiện để đáp
-                                    ứng
-                                    tiến độ bàn giao nhà trong ...</p>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-vip">
+                                        <span>vip</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Số 03 Tôn Thất thuyết</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Chung cư</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 146m2</p>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>2,5 Tỷ</p>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/1.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp nhìn ra sông quận 7</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Điểm nổi bật của Q7 Saigon Riverside:
+                                        1/ Dự án là khu phức hợp căn hộ tốt nhất Việt Nam, biệt thự liền kề, khu dâ...
+                                    </p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Đào Trí P.Phú Thuận Q.7</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: ~ 80m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>1,7 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
-                                </div>
-                                <div class="item-vip">
-                                    <span>vip</span>
+                    <div class="col">
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/8.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-hot">
+                                        <span>hot</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="title-item-index">
-                            <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            <div class="title-item-index">
+                                <p>Sở hữu căn hộ cao cấp liền kề Phú Mỹ Hưng</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Sở hữu căn hộ cao cấp liền kề KĐT Phú Mỹ Hưng chỉ với 2.3 tỷ/căn 2PN, nằm mặt
+                                        tiền
+                                        Nguyễn Văn Linh, Quận 7, với mảng...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Khu đô thị mới Phú Mỹ Hưng</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 160m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>1,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
-                                    9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/97493029.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-hot">
+                                        <span>Hot</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ chung cư tại Sky Park Residence</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Dự án Sky Park Residence số 3 Tôn Thất Thuyết đang trong quá trình hoàn thiện để
+                                        đáp
+                                        ứng
+                                        tiến độ bàn giao nhà trong ...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Số 03 Tôn Thất thuyết</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Chung cư</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 146m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>2,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>9,5 Tỷ</p>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-vip">
+                                        <span>vip</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
+
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
+                            </div>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
+                                </div>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/1.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                    <div class="col">
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/1.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="title-item-index">
-                            <p>Căn hộ cao cấp nhìn ra sông quận 7</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Điểm nổi bật của Q7 Saigon Riverside:
-                                    1/ Dự án là khu phức hợp căn hộ tốt nhất Việt Nam, biệt thự liền kề, khu dâ...</p>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp nhìn ra sông quận 7</p>
                             </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Đường Đào Trí P.Phú Thuận Q.7</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: ~ 80m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>1,7 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/8.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Điểm nổi bật của Q7 Saigon Riverside:
+                                        1/ Dự án là khu phức hợp căn hộ tốt nhất Việt Nam, biệt thự liền kề, khu dâ...
+                                    </p>
                                 </div>
-                                <div class="item-hot">
-                                    <span>hot</span>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Đào Trí P.Phú Thuận Q.7</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: ~ 80m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>1,7 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/8.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-hot">
+                                        <span>hot</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="title-item-index">
-                            <p>Sở hữu căn hộ cao cấp liền kề Phú Mỹ Hưng</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Sở hữu căn hộ cao cấp liền kề KĐT Phú Mỹ Hưng chỉ với 2.3 tỷ/căn 2PN, nằm mặt tiền
-                                    Nguyễn Văn Linh, Quận 7, với mảng...</p>
+                            <div class="title-item-index">
+                                <p>Sở hữu căn hộ cao cấp liền kề Phú Mỹ Hưng</p>
                             </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Khu đô thị mới Phú Mỹ Hưng</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 160m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>1,5 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/97493029.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p> Sở hữu căn hộ cao cấp liền kề KĐT Phú Mỹ Hưng chỉ với 2.3 tỷ/căn 2PN, nằm mặt
+                                        tiền
+                                        Nguyễn Văn Linh, Quận 7, với mảng...</p>
                                 </div>
-                                <div class="item-hot">
-                                    <span>Hot</span>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Khu đô thị mới Phú Mỹ Hưng</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 160m2</p>
+                                </div>
+                            </div>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>1,5 Tỷ</p>
+                                </div>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="item-index">
+                            <div class="img-item-index">
+                                <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
+                                <div class="img-plus-item-index">
+                                    <div class="item-new">
+                                        <span>Mới đăng</span>
+                                    </div>
+                                    <div class="item-vip">
+                                        <span>vip</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="title-item-index">
-                            <p>Căn hộ chung cư tại Sky Park Residence</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Dự án Sky Park Residence số 3 Tôn Thất Thuyết đang trong quá trình hoàn thiện để đáp
-                                    ứng
-                                    tiến độ bàn giao nhà trong ...</p>
+                            <div class="title-item-index">
+                                <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
                             </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Số 03 Tôn Thất thuyết</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Chung cư</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 146m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>2,5 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                            <div class="index">
+                                <div class="decr-item-index">
+                                    <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
+                                        9.1ty rẻ hơn 1ty so với giá bán hi...</p>
                                 </div>
-                                <div class="item-vip">
-                                    <span>vip</span>
+                                <div class="detail-item-index">
+                                    <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
+                                    <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
+                                    <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="title-item-index">
-                            <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
-                                    9.1ty rẻ hơn 1ty so với giá bán hi...</p>
-                            </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>9,5 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/1.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                            <div class="price-item-index">
+                                <div class="cost">
+                                    <p>9,5 Tỷ</p>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="title-item-index">
-                            <p>Căn hộ cao cấp nhìn ra sông quận 7</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Điểm nổi bật của Q7 Saigon Riverside:
-                                    1/ Dự án là khu phức hợp căn hộ tốt nhất Việt Nam, biệt thự liền kề, khu dâ...</p>
-                            </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Đường Đào Trí P.Phú Thuận Q.7</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: ~ 80m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>1,7 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/8.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
+                                <div class="more-info">
+                                    <span>Xem chi tiết</span>
                                 </div>
-                                <div class="item-hot">
-                                    <span>hot</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title-item-index">
-                            <p>Sở hữu căn hộ cao cấp liền kề Phú Mỹ Hưng</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p> Sở hữu căn hộ cao cấp liền kề KĐT Phú Mỹ Hưng chỉ với 2.3 tỷ/căn 2PN, nằm mặt tiền
-                                    Nguyễn Văn Linh, Quận 7, với mảng...</p>
-                            </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Khu đô thị mới Phú Mỹ Hưng</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 78m2 - 160m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>1,5 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-index">
-                        <div class="img-item-index">
-                            <img class="img-fluid" src="img/2-38abee32-a387-45f2-9799-d4eb30ae4738.webp" alt="">
-                            <div class="img-plus-item-index">
-                                <div class="item-new">
-                                    <span>Mới đăng</span>
-                                </div>
-                                <div class="item-vip">
-                                    <span>vip</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title-item-index">
-                            <p>Căn hộ cao cấp 08 dự án Del Donaro</p>
-                        </div>
-                        <div class="index">
-                            <div class="decr-item-index">
-                                <p>Căn 08 có hướng view Hồ Tây, Đông Nam đẹp nhất dự án, tầng đẹp giá ngoại giao chỉ
-                                    9.1ty rẻ hơn 1ty so với giá bán hi...</p>
-                            </div>
-                            <div class="detail-item-index">
-                                <p><i class="fa fa-map-marker"></i> Đường Thụy Khuê - Tây hồ</p>
-                                <p><i class="fa fa-building"></i> Loại BĐS: Căn hộ</p>
-                                <p><i class="fa fa-globe"></i> Diện tích: 168m2</p>
-                            </div>
-                        </div>
-                        <div class="price-item-index">
-                            <div class="cost">
-                                <p>9,5 Tỷ</p>
-                            </div>
-                            <div class="more-info">
-                                <span>Xem chi tiết</span>
                             </div>
                         </div>
                     </div>
@@ -411,9 +433,16 @@
             </div>
         </div>
     </section>
+    <span class="btn-go-home">
+        <a href="index.html"><img src="img/home.jpg" alt=""></a>
+    </span>
+    <span class="btn-go-top">
+        <img src="img/arrowup.png" alt="" onclick="(document.documentElement.scrollTop = 0)">
+    </span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
