@@ -4,6 +4,9 @@ body {
 .container {
   max-width: 1170px;
 }
+.slick-dots {
+  left: 0;
+}
 /****** index page ******/
 .search-bar {
   background: #35bf76;
@@ -23,7 +26,7 @@ body {
   padding: 0 30px;
 }
 .button-search {
-  margin-top: 38px;
+  margin-top: 36px;
 }
 .button-search span {
   background: #25975a;
@@ -194,11 +197,12 @@ body {
 }
 .select-items div,
 .select-selected {
-  padding: 6px 16px;
+  padding: 5px 16px;
   border: 1px solid #ddd;
   background-color: #fff;
   cursor: pointer;
   border-radius: 3px;
+  font-size: 15px;
 }
 .select-items {
   position: absolute;
@@ -698,13 +702,14 @@ ul li {
   width: 20px;
   border-radius: 30px;
   height: 40px;
+  padding: 2px;
 }
 .btn-go-top {
   position: fixed;
   bottom: 30px;
   right: 30px;
   cursor: pointer;
-  background: #35bf76;
+  background: #41464b;
   border-radius: 30px;
   width: 40px;
   text-align: center;
@@ -816,14 +821,11 @@ ul li {
   .item-index {
     margin: 10px;
   }
-  .info-item-new-title span {
-    margin: 0 3px;
-  }
   .content-right span {
     font-size: 10px;
   }
   .info-item-new-title p {
-    padding: 0;
+    padding-bottom: 0;
   }
   .item-brands img {
     width: 120px;
@@ -858,6 +860,15 @@ ul li {
   }
   .big-news .big-news-content-right .index-content-right a {
     font-size: 12px;
+  }
+  .img-banner-new {
+    display: none;
+  }
+  .news-item-news {
+    width: 100%;
+  }
+  .content-right {
+    padding-left: 10px;
   }
 }
 
