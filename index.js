@@ -60,7 +60,7 @@
             alert("Cảm ơn!");
         }
         function onClickSearch() {
-            alert("Tính năng đang trong quá trình cập nhật");
+            alert("Không tìm thấy sản phẩm");
         }
         function gotoContact () {
             windown.location.href = "contact.html";
@@ -84,19 +84,25 @@
             else if (Browser.indexOf('Firefox') >= 0){
              Browser = 'Firefox';
             }
-            else if (Browser.indexOf('Chrome') >= 0){
-             Browser = 'Chrome';
-            }
-            else if (Browser.indexOf('Safari') >= 0){
-             Browser = 'Safari';
-            }
             else if (Browser.indexOf('Opera') >= 0){
                Browser = 'Opera';
+            }
+            else if (Browser.indexOf('Cốc Cốc') >= 0){
+                Browser = 'Cốc Cốc';
+            }
+            else if (Browser.indexOf('Edge') >= 0){
+                Browser = 'Microsoft Edge';
+            }
+            else if (Browser.indexOf('Chrome') >= 0){
+                Browser = 'Chrome';
+            }
+            else if (Browser.indexOf('Safari') >= 0){
+                Browser = 'Safari';
             }
             else{
                 Browser = 'UNKNOWN';
             }
-            if( screen.width <= 480 ) {
+            if( screen.width <= 430 ) {
                 if (uagent.search("iphone") > -1)
                     alert("You are used " + Browser + " on Iphone");
                 else
